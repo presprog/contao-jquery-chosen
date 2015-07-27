@@ -1,0 +1,20 @@
+{
+    "name": "presprog/contao-jquery-chosen",
+    "type": "contao-module",
+    "description": "This extension adds the jQuery version of Chosen by Harvest to Contao. After install, simply add the j_jquery_chosen template in your theme.",
+    "license": "LGPL-3.0+",
+    "authors": [
+    {
+        "name": "Benedict Zinke . Present Progressive",
+        "email": "bz@presentprogressive.de",
+        "role": "Developer",
+        "homepage": "http://www.presentprogressive.de"
+    }],
+    "extra": {
+        "contao": {
+            "sources": {
+                "src": "system/modules/JqueryChosen"
+            }
+        }
+    }
+}

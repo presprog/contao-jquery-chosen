@@ -1,0 +1,23 @@
+<?php
+
+// Add the jquery chosen style sheet
+if ($GLOBALS['TL_CONFIG']['debugMode']) {
+    $GLOBALS['TL_CSS'][] = 'system/modules/JqueryChosen/assets/jquery/chosen/'. JQUERY_CHOSEN .'/chosen.css||static';
+} else {    
+    $GLOBALS['TL_CSS'][] = 'system/modules/JqueryChosen/assets/jquery/chosen/'. JQUERY_CHOSEN .'/chosen.min.css||static';
+}
+?>
+
+<?php if ($GLOBALS['TL_CONFIG']['debugMode']): ?>
+    <script src="system/modules/JqueryChosen/assets/jquery/chosen/<?= JQUERY_CHOSEN ?>/chosen.jquery.js"></script>
+<?php else: ?>
+    <script src="system/modules/JqueryChosen/assets/jquery/chosen/<?= JQUERY_CHOSEN ?>/chosen.jquery.min.js"></script>
+<?php endif; ?>
+
+<script>
+    (function($) {
+        $(document).ready(function() {
+            $('select.tl_chosen').chosen();
+        });
+    })(jQuery);
+</script>
